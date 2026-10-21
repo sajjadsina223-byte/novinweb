@@ -1,0 +1,362 @@
+```html
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>تماس با ما | نوین‌وب</title>
+
+    <meta
+        name="description"
+        content="برای سفارش طراحی سایت و دریافت مشاوره با نوین‌وب تماس بگیرید."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Tahoma, Arial, sans-serif;
+            background:
+                radial-gradient(
+                    circle at 50% 0%,
+                    rgba(130, 70, 220, 0.18),
+                    transparent 45%
+                ),
+                #09090f;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .contact-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 8%;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #b58aff;
+        }
+
+        .back-link {
+            color: #c9b5ed;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .back-link:hover {
+            color: #ffffff;
+        }
+
+        .contact-section {
+            width: min(650px, 90%);
+            margin: 65px auto;
+        }
+
+        .contact-heading {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .tag {
+            display: inline-block;
+            padding: 9px 17px;
+            margin-bottom: 20px;
+            border-radius: 30px;
+            background: rgba(142, 82, 255, 0.12);
+            border: 1px solid rgba(181, 138, 255, 0.22);
+            color: #c7a5ff;
+            font-size: 12px;
+        }
+
+        .contact-heading h1 {
+            font-size: clamp(27px, 5vw, 40px);
+            line-height: 1.8;
+            margin-bottom: 12px;
+        }
+
+        .contact-heading h1 span {
+            color: #b58aff;
+        }
+
+        .contact-heading p {
+            color: #aaa5b8;
+            font-size: 14px;
+            line-height: 2.2;
+        }
+
+        .contact-card {
+            padding: 32px;
+            background: rgba(22, 20, 32, 0.94);
+            border: 1px solid rgba(181, 138, 255, 0.18);
+            border-radius: 22px;
+            box-shadow: 0 20px 70px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+        }
+
+        .form-group label {
+            color: #e4d9fa;
+            font-size: 13px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 15px;
+            background: #100f18;
+            border: 1px solid #30283f;
+            border-radius: 11px;
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: #777184;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-color: #a56aff;
+            box-shadow: 0 0 0 3px rgba(165, 106, 255, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+            line-height: 2;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 11px;
+            background: linear-gradient(135deg, #8a43ed, #6025c9);
+            color: #ffffff;
+            font-family: inherit;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.3);
+        }
+
+        .contact-note {
+            margin-top: 20px;
+            text-align: center;
+            color: #928ba1;
+            font-size: 12px;
+            line-height: 2;
+        }
+
+        .contact-email {
+            margin-top: 24px;
+            text-align: center;
+            direction: ltr;
+            color: #bca2ef;
+            font-size: 14px;
+        }
+
+        .contact-footer {
+            padding: 25px 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.07);
+            text-align: center;
+            color: #777184;
+            font-size: 12px;
+        }
+
+        @media (max-width: 600px) {
+            .contact-header {
+                padding: 20px 5%;
+            }
+
+            .contact-section {
+                margin: 40px auto;
+            }
+
+            .contact-card {
+                padding: 22px 17px;
+            }
+
+            .logo {
+                font-size: 21px;
+            }
+
+            .back-link {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="contact-header">
+        <a href="index.html" class="logo">نوین‌وب</a>
+        <a href="index.html" class="back-link">بازگشت به صفحه اصلی ←</a>
+    </header>
+
+    <main class="contact-section">
+
+        <div class="contact-heading">
+            <span class="tag">با ما در ارتباط باشید</span>
+
+            <h1>
+                بیایید درباره
+                <span>پروژه شما</span>
+                صحبت کنیم
+            </h1>
+
+            <p>
+                فرم زیر را تکمیل کن تا پیام تو را دریافت کنیم
+                و بتوانیم برای ادامه همکاری با تو در ارتباط باشیم.
+            </p>
+        </div>
+
+        <div class="contact-card">
+
+            <form
+                class="contact-form"
+                action="https://formsubmit.co/3f67c4f1bffa08174b0b1e30e91dc4bf"
+                method="POST"
+            >
+
+                <!-- تنظیمات FormSubmit -->
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="پیام جدید از سایت نوین‌وب"
+                >
+
+                <input
+                    type="hidden"
+                    name="_template"
+                    value="table"
+                >
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="true"
+                >
+
+                <!-- نام و نام خانوادگی -->
+
+                <div class="form-group">
+                    <label for="name">نام و نام خانوادگی</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="نام خود را وارد کن"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- ایمیل بازدیدکننده -->
+
+                <div class="form-group">
+                    <label for="email">ایمیل شما</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="example@gmail.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <!-- موضوع پیام -->
+
+                <div class="form-group">
+                    <label for="subject">موضوع پیام</label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="مثلاً سفارش طراحی سایت"
+                        required
+                    >
+                </div>
+
+                <!-- متن پیام -->
+
+                <div class="form-group">
+                    <label for="message">متن پیام</label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="پیامت را اینجا بنویس..."
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- دکمه ارسال -->
+
+                <button type="submit" class="submit-btn">
+                    ارسال پیام
+                </button>
+
+            </form>
+
+            <p class="contact-note">
+                لطفاً اطلاعات را به‌درستی وارد کن تا امکان پاسخ‌گویی
+                به پیام تو وجود داشته باشد.
+            </p>
+
+            <div class="contact-email">
+                wwsina39@gmail.com
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="contact-footer">
+        © 2026 نوین‌وب | تمامی حقوق محفوظ است.
+    </footer>
+
+</body>
+</html
